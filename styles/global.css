@@ -17,11 +17,38 @@
     --font-family: "Archivo", sans-serif;
     --heading1: 800 2.4rem/135% var(--font-family);
     --heading2: 800 1.6rem/140% var(--font-family);
+    --menuLink: 700 1.6rem/140% var(--font-family);
     --heading3: 800 1.4rem/140% var(--font-family);
     --span: 600 1.4rem/145% var(--font-family);
+    --text: 400 1.6rem/140% var(--font-family);
     --paragraph: 400 1.4rem/160% var(--font-family);
 }
 
 body{
     background-color: var(--bg-color);
+    color: var(--text-color-primary);
+    font: var(--text);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--brand-color-light);
+}
+
+h1, h2, h3 {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

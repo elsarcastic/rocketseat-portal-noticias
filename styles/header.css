@@ -1,0 +1,42 @@
+header nav:first-of-type ul {
+    display: grid;
+    padding: 2rem 3.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--text-color-primary);
+
+}
+
+header nav:first-of-type ul li:last-child {
+    justify-self: end;
+}
+
+header nav:first-of-type ul li:nth-child(2) {
+    justify-self: center;
+}
+
+header nav:first-of-type ul li {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font: var(--menuLink);
+}
+
+header nav:last-of-type {
+    border: solid var(--stroke-color);
+    border-width: 1px 0;
+}
+
+header nav:last-of-type ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    color: var(--text-color-secondary);
+    padding: 1.4rem 3.2rem;
+}
+
+header nav:last-of-type ul li {
+    display: flex;
+    align-items: center;
+    font: var(--span);
+}
+
